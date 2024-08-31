@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Lembaga Pelatihan</title>
+</head>
+<body>
+    <header>
+        <!-- Brand -->
+        <div id="brand">
+            <img id="logo" src="../img/logo.png" alt="Logo" width="100">
+        </div>
+        <!-- Navigasi -->
+        <nav id="nav">
+            <a href="../index.html">Beranda</a></li>
+            <a href="profile.html">Profil & Kontak</a></li>
+            <a href="program.html">Program Pelatihan</a></li>
+        </nav>
+    </header>  
+
+
+    <!-- Berita dan Artikel -->
+    <section id="news-content-section">
+        <h2 class="section-title">Berita dan Artikel</h2>
+    
+        <article id="full-news-article">
+            <h1 class="article-title">Pengaruh Teknologi AR dalam Proses Pembelajaran Interaktif</h1>
+            <p id="article-content-1" class="article-content">
+                Teknologi Augmented Reality (AR) telah memberikan dampak signifikan dalam proses pembelajaran interaktif. Dengan mengintegrasikan 
+                elemen digital ke dalam dunia nyata, AR menawarkan pengalaman belajar yang lebih imersif dan interaktif. Teknologi ini memungkinkan 
+                siswa untuk berinteraksi dengan materi pembelajaran secara langsung, seperti visualisasi objek 3D dan simulasi situasi nyata, 
+                yang meningkatkan pemahaman dan retensi informasi. AR juga dapat menciptakan lingkungan belajar yang lebih menarik dan 
+                memotivasi, membantu siswa dengan berbagai gaya belajar untuk lebih mudah memahami konsep-konsep kompleks. Dengan penerapan AR, 
+                pembelajaran dapat menjadi lebih adaptif dan sesuai dengan kebutuhan individu, mendukung perkembangan keterampilan dan pengetahuan 
+                secara efektif.
+            </p>
+
+            <button id="btn-read-article" class="article-button" onclick="speakText('article-content-1')">Bacakan Artikel</button>
+            <button id="btn-stop-reading" class="article-button" onclick="stopSpeaking()">Berhenti Membaca</button>
+        </article>
+    </section>
+</body>
+</html>

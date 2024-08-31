@@ -1,0 +1,695 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation styling */
+header {
+    display: flex;
+    background-color: #33230ce4;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    position: fixed; /* Mengunci posisi nav */
+    top: 0; /* Menempel pada bagian atas layar */
+    width: 100%;
+    z-index: 1000; /* Memberi lapisan lebih tinggi agar berada di atas elemen lain */
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #b4761a;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#brand {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#logologin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subutton {
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #b4761a; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+#subutton:hover {
+    background-color: #b4761a; /* Warna latar belakang tombol saat hover */
+}
+
+#pembatas {
+    width: 1.5px;
+    height: 50px;
+    background-color: #b4761a;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#promotion {
+    display: flex;
+    max-width: 1100px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#promotion-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#free-classes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.free-class-container {
+    margin: -10px;
+    transition: transform 0.5s ease;
+}
+
+.free-class-container:hover {
+    transform: scale(1.1);
+}
+/* Styling untuk Berita dan Artikel */
+
+#filter-container {
+    top: 10px;
+    left: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+#filter-container select {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#news-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 80px;
+    overflow-x: auto; /* Menambahkan scrollbar horizontal */
+}
+
+#news-articles {
+    display: flex;
+    justify-content: flex-start; /* Mengatur item dari kiri ke kanan */
+    flex-wrap: nowrap; /* Mencegah item beralih ke baris baru */
+}
+
+.article-container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    width: auto;
+    transition: transform 0.2s;
+    text-align: center;
+    cursor: pointer;
+    flex: 0 0 auto; /* Mengatur agar elemen tidak menyusut dan tidak tumbuh */
+}
+
+.article-container img {
+    border-radius: 15px;
+}
+
+.article {
+    display: grid;
+    justify-content: center;
+}
+
+.article-container:hover {
+    transform: scale(1.07);
+}
+
+.article h1 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.article p {
+    font-size: 14px;
+    color: #777;
+    margin-top: auto;
+}
+
+/*Styling untuk Berita */
+section#news-content-section {
+    margin: 20px auto;
+    margin-top: 120px;
+    max-width: 800px;
+    padding: 0 15px;
+}
+
+section#news-content-section h2.section-title {
+    color: #b4761a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk artikel */
+article#full-news-article {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+article#full-news-article h1.article-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+article#full-news-article p.article-content {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk tombol */
+button.article-button {
+    background-color: #b4761a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button.article-button:hover {
+    background-color: #b4761a;
+}
+
+/* Styling untuk Galeri Foto dan Video */
+section#gallery-section {
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f8f8f8;
+}
+
+section#gallery-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+section#gallery-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Styling untuk grid galeri */
+#galeri-foto {
+    overflow: hidden; /* Menyembunyikan bagian di luar layar */
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+.slide-container {
+    display: flex; /* Menggunakan flexbox untuk mengatur slide */
+    transition: transform 1s ease; /* Animasi transisi untuk slide */
+}
+
+.container-foto {
+    flex: 0 0 25%; /* Setiap container mengambil 1/3 dari lebar layar */
+    box-sizing: border-box; /* Menghindari elemen meluap karena padding */
+    display: flex;
+    position: relative;
+    width: 100%; /* Lebar penuh dalam kontainer */
+    height: 500px;
+    border-radius: 10px;
+    margin: 50px; /* Jarak antar container */
+    justify-content: center;
+    transition: transform 0.5s ease;
+    background-color: #d3d3d3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.layer {
+    position: absolute;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    transition: z-index 0s, transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+.layer1 {
+    top: 27%;
+    width: 70%;
+    z-index: 3; /* Tetap berada di atas */
+}
+
+.layer2 {
+    top: 20%;
+    right: 5%;
+    width: 35%;
+    z-index: 2;
+    transform: rotate(10deg);
+}
+
+.layer3 {
+    bottom: 23%;
+    left: 5%;
+    width: 35%;
+    z-index: 2;
+    transform: rotate(-5deg);
+}
+
+/* Mengubah layer2 ketika container di-hover */
+.container-foto:hover .layer2 {
+    z-index: 3; /* Naikkan z-index menjadi 3 */
+    transform: scale(1.1) rotate(20deg) translate(30px, -30px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Perbesar bayangan saat hover */
+}
+
+.container-foto:hover .layer3 {
+    z-index: 3; /* Naikkan z-index menjadi 3 */
+    transform: scale(1.1) rotate(-15deg) translate(-30px, 30px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Perbesar bayangan saat hover */
+}
+
+.container-foto:hover .layer1 {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 3, 0.3); /* Perbesar bayangan saat hover */
+}
+
+/* Styling khusus untuk iframe video */
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+/* Styling untuk program */
+#prpl{
+    margin: 150px auto 40px; /* Menambahkan jarak atas dan auto margin samping */
+    height: 300px;
+    background-image: url('../img/ppl.png'); /* Ganti dengan path gambar kamu */
+    background-size: 1000px; /* Atur gambar agar menutupi seluruh elemen */
+    background-position: center; /* Posisikan gambar di tengah */
+    background-repeat: no-repeat; /* Jangan ulang gambar */
+    padding: 20px; /* Sesuaikan padding sesuai kebutuhan */
+}
+
+#prpl p {
+    color: #b4761a; /* Warna teks agar kontras dengan background */
+    margin-top: 100px; /* Hilangkan margin default pada h1 */
+    text-align: center;
+    margin-left: -30px;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: 'Arial';
+}
+
+#program-list {
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan elemen beralih ke baris baru jika ruang tidak cukup */
+    justify-content: center;
+}
+
+.program-container {
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: -90px;
+    transition: transform 0.5s ease;
+}
+
+.program-container img.program-img {
+    height: auto;
+}
+
+.program-container p {
+    color: #b4761a;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial';
+    position: absolute;
+    transform: translate(0px, 170px);
+}
+
+.program-container a {
+    color: #f4f4f4;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Arial';
+    position: absolute;
+    transform: translate( 22px, 235px);
+    text-decoration: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 800px;
+    position: relative;
+    justify-content: center;
+}
+
+/* Gaya untuk tombol close (X) */
+.close {
+    color: #000000;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: -55px;
+    margin-right: -40px;
+    text-decoration: none;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-content ul, .popup-content li, .popup-content dl, .popup-content dd {
+    text-align: left;
+}
+
+.popup:target {
+    display: flex;
+}
+
+.daftar-btn {
+    display: block;
+    width: 100px;
+    height: 25px;
+    background-color: #b4761a;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 60px auto 0; /* Changed from margin-top to margin with auto for horizontal centering */
+    text-decoration: none;
+}
+
+.program-container:hover {
+    transform: scale(1.2);
+}
+
+/* Styling untuk Profile dan Kontak */
+
+/* Profil Lembaga */
+#profile-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    margin-top: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#profile-section h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#profile-section h2 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#profile-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Kontak */
+#contact-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+#contact-section input[type="text"],
+#contact-section input[type="email"],
+#contact-section input[type="tel"],
+#contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+#contact-section input[type="submit"] {
+    background-color: #b4761a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contact-section input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/*Styling untuk registration dan login*/
+/* Styling untuk halaman Sign Up */
+#signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Membuat container memiliki tinggi minimal 100% dari viewport */
+}
+
+.form-container-signup {
+    background-color: white;
+    margin-top: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+.form-container-signup h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container-signup label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #333;
+}
+
+.form-container-signup input[type="text"],
+.form-container-signup input[type="email"],
+.form-container-signup input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container-signup button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b4761a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.form-container-signup button:hover {
+    background-color: #b4761a;
+}
+
+.form-container-signup p {
+    margin-top: 20px;
+    color: #555;
+}
+
+.form-container-signup a {
+    color: #b4761a;
+    text-decoration: none;
+}
+
+.form-container-signup a:hover {
+    text-decoration: underline;
+}
+
+/* Styling untuk halaman Login */
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Membuat container memiliki tinggi minimal 100% dari viewport */
+}
+
+.form-container-login {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+.form-container-login h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container-login label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #333;
+}
+
+.form-container-login input[type="text"],
+.form-container-login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container-login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b4761a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.form-container-login button:hover {
+    background-color: #b4761a;
+}
+
+.form-container-login p {
+    margin-top: 20px;
+    color: #555;
+}
+
+.form-container-login a {
+    color: #b4761a;
+    text-decoration: none;
+}
+
+.form-container-login a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness untuk tampilan yang lebih kecil */
+@media (max-width: 768px) {
+    section#gallery-section h2, section#gallery-section h3 {
+        font-size: 22px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

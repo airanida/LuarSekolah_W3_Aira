@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Lembaga Pelatihan</title>
+</head>
+<body>
+    <header>
+        <!-- Brand -->
+        <div id="brand">
+            <img id="logo" src="../img/logo.png" alt="Logo" width="100">
+        </div>
+        <!-- Navigasi -->
+        <nav id="nav">
+            <a href="../index.html">Beranda</a></li>
+            <a href="profile.html">Profil & Kontak</a></li>
+            <a href="program.html">Program Pelatihan</a></li>
+        </nav>
+    </header>  
+
+
+    <!-- Berita dan Artikel -->
+    <section id="news-content-section">
+        <h2 class="section-title">Berita dan Artikel</h2>
+    
+        <article id="full-news-article">
+            <h1 class="article-title">Peran AI dalam Revolusi Industri 4.0</h1>
+            <p id="article-content-1" class="article-content">
+                Kecerdasan buatan (AI) memainkan peran krusial dalam Revolusi Industri 4.0, membawa perubahan besar dalam cara industri beroperasi. 
+                AI memungkinkan otomatisasi proses produksi, analisis data secara real-time, dan pengambilan keputusan berbasis data yang lebih 
+                cerdas. Dengan kemampuan AI untuk memproses dan menganalisis volume data yang besar, perusahaan dapat meningkatkan efisiensi 
+                operasional, mengurangi biaya, dan mempercepat inovasi. Selain itu, AI juga mendorong kemajuan dalam teknologi seperti 
+                Internet of Things (IoT) dan sistem produksi cerdas, menciptakan ekosistem industri yang lebih terintegrasi dan responsif. 
+                Dampak AI dalam Revolusi Industri 4.0 tidak hanya terbatas pada peningkatan produktivitas, tetapi juga pada transformasi 
+                cara kita bekerja dan berinteraksi dengan teknologi.
+            </p>
+
+            <button id="btn-read-article" class="article-button" onclick="speakText('article-content-1')">Bacakan Artikel</button>
+            <button id="btn-stop-reading" class="article-button" onclick="stopSpeaking()">Berhenti Membaca</button>
+        </article>
+    </section>
+</body>
+</html>

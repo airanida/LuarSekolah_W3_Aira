@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap; /* Mengizinkan baris baru jika diperlukan */
+            margin: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            position: relative;
+            width: 300px; /* Atur lebar default */
+            height: 500px; /* Atur tinggi default */
+            border-radius: 10px;
+            margin: 10px; /* Jarak antar container */
+            justify-content: center;
+            transition: transform 0.5s ease;
+            background-color: #d3d3d3; /* Tambahkan warna abu muda */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+        }
+
+        .layer {
+            position: absolute;
+            border-radius: 10px;
+            width: 80%;
+            height: auto;
+            object-fit: cover;
+            transition: z-index 0s, transform 0.5s ease, box-shadow 0.5s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+        }
+
+        .layer1 {
+            top: 27%;
+            width: 70%;
+            z-index: 3; /* Tetap berada di atas */
+        }
+
+        .layer2 {
+            top: 20%;
+            right: 5%;
+            width: 35%;
+            z-index: 2;
+            transform: rotate(10deg);
+        }
+
+        .layer3 {
+            bottom: 23%;
+            left: 5%;
+            width: 35%;
+            z-index: 2;
+            transform: rotate(-5deg);
+        }
+
+        /* Mengubah layer2 ketika container di-hover */
+        .container:hover .layer2 {
+            z-index: 3; /* Naikkan z-index menjadi 3 */
+            transform: scale(1.1) rotate(20deg) translate(30px, -30px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Perbesar bayangan saat hover */
+        }
+
+        .container:hover .layer3 {
+            z-index: 3; /* Naikkan z-index menjadi 3 */
+            transform: scale(1.1) rotate(-15deg) translate(-30px, 30px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Perbesar bayangan saat hover */
+        }
+
+        .container:hover .layer1 {
+            transform: scale(0.95);
+            box-shadow: 0 2px 4px rgba(0, 0, 3, 0.3); /* Perbesar bayangan saat hover */
+        }
+
+        /* Media query untuk iPhone 13 Pro Max */
+        @media (max-width: 430px) {
+            section {
+                width: 100%;
+            }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <img src="../img/11 (1).png" alt="Layer 1" class="layer layer1">
+            <img src="../img/11 (2).png" alt="Layer 2" class="layer layer2">
+            <img src="../img/11.png" alt="Layer 3" class="layer layer3">
+        </div>
+        <div class="container">
+            <img src="../img/12 (1).png" alt="Layer 1" class="layer layer1">
+            <img src="../img/12 (2).png" alt="Layer 2" class="layer layer2">
+            <img src="../img/12.png" alt="Layer 3" class="layer layer3">
+        </div>
+        <div class="container">
+            <img src="../img/13.png" alt="Layer 1" class="layer layer1">
+            <img src="../img/13 (1).png" alt="Layer 2" class="layer layer2">
+            <img src="../img/13 (2).png" alt="Layer 3" class="layer layer3">
+        </div>
+        <div class="container">
+            <img src="../img/11 (1).png" alt="Layer 1" class="layer layer1">
+            <img src="../img/11 (2).png" alt="Layer 2" class="layer layer2">
+            <img src="../img/11.png" alt="Layer 3" class="layer layer3">
+        </div>
+        <div class="container">
+            <img src="../img/12 (1).png" alt="Layer 1" class="layer layer1">
+            <img src="../img/12 (2).png" alt="Layer 2" class="layer layer2">
+            <img src="../img/12.png" alt="Layer 3" class="layer layer3">
+        </div>
+        <div class="container">
+            <img src="../img/13.png" alt="Layer 1" class="layer layer1">
+            <img src="../img/13 (1).png" alt="Layer 2" class="layer layer2">
+            <img src="../img/13 (2).png" alt="Layer 3" class="layer layer3">
+        </div>
+    </div>
+        <div class="container">
+            <img src="../img/12 (1).png" alt="Layer 1" class="layer layer1">
+            <img src="../img/12 (2).png" alt="Layer 2" class="layer layer2">
+            <img src="../img/12.png" alt="Layer 3" class="layer layer3">
+        </div>
+        <div class="container">
+            <img src="../img/13.png" alt="Layer 1" class="layer layer1">
+            <img src="../img/13 (1).png" alt="Layer 2" class="layer layer2">
+            <img src="../img/13 (2).png" alt="Layer 3" class="layer layer3">
+        </div>
+    </section>
+</body>
+</html>

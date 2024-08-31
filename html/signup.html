@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Registrasi</title>
+</head>
+<body>
+    <header>
+        <!-- Brand -->
+        <div id="brand">
+            <img id="logo" src="../img/logo.png" alt="Logo" width="100">
+        </div>
+        <!-- Navigasi -->
+        <nav id="nav">
+            <a href="../index.html">Beranda</a></li>
+            <a href="profile.html">Profil & Kontak</a></li>
+            <a href="program.html">Program Pelatihan</a></li>
+        </nav>
+    </header>  
+
+    <section id="signup">
+        <div class="form-container-signup">
+            <h2>Create an Account</h2>
+            <!-- Tambahkan ID 'registration-form' pada form -->
+            <form id="registration-form" action="#" method="post">
+                <label for="signup-username-registration">Username</label>
+                <input type="text" id="signup-username-registration" name="username" required>
+
+                <label for="signup-email-registration">Email</label>
+                <input type="email" id="signup-email-registration" name="email" required>
+
+                <label for="signup-password-registration">Password</label>
+                <input type="password" id="signup-password-registration" name="password" required>
+
+                <!-- Ubah ID tombol submit menjadi 'regis_submit' -->
+                <button type="button" id="regis_submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </section>
+</body>
+</html>

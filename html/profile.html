@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Lembaga Pelatihan</title>
+</head>
+<body>
+    <header>
+        <!-- Brand -->
+        <div id="logologin">
+            <div id="brand">
+                <img id="logo" src="../img/logo.png" alt="Logo" width="100">
+            </div>
+            <div id="pembatas"> </div>
+            <a href="html/signup.html" id="subutton">
+                Registrasi
+            </a>
+        </div>
+        <!-- Navigasi -->
+        <nav id="nav">
+            <a href="../index.html">Beranda</a></li>
+            <a href="profile.html">Profil & Kontak</a></li>
+            <a href="program.html">Program Pelatihan</a></li>
+        </nav>
+    </header>  
+
+    <!-- Profil Lembaga Pendidikan -->
+    <section id="profile-section">
+        <h1>Profil Lembaga Pendidikan</h1>
+        <h2>Future Scholars Institute</h2>
+        <p>Future Scholars Institute adalah sebuah institusi yang mengkhususkan diri dalam menyediakan program pelatihan dan pendidikan berbasis teknologi. 
+            Dengan pendekatan pembelajaran yang adaptif dan interaktif, kami menawarkan berbagai kursus yang dirancang 
+            untuk memenuhi kebutuhan belajar individu dan profesional. Keunggulan kami terletak pada penyampaian materi oleh instruktur terkemuka, 
+            penggunaan alat dan teknologi pendidikan terbaru, serta materi yang selalu diperbarui secara berkala. Tujuan utama kami adalah 
+            menyiapkan peserta untuk tantangan dunia profesional dengan memberikan pengetahuan dan keterampilan praktis yang aplikatif, 
+            sehingga mereka dapat mencapai kesuksesan dalam karier dan kehidupan pribadi mereka.</p>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact-section">
+        <h2>Kontak</h2>
+        <form onsubmit="alert('Terima kasih atas pesan Anda! Kami akan segera merespons.')">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" title="Masukkan nomor telepon yang valid" required><br><br>
+        
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+            <input type="submit" value="Kirim">
+        </form>
+    </section>
+</body>
+</html>
